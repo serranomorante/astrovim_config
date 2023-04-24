@@ -44,6 +44,9 @@ return {
       end,
       desc = "Switch Buffers",
     },
+    -- Scroll half page down/up and center the mouse
+    ["<C-d>"] = { "<C-d>zz", desc = "Scroll half page down" },
+    ["<C-u>"] = { "<C-u>zz", desc = "Scroll half page up" },
   },
   t = {
     -- setting a mapping to false will disable it
