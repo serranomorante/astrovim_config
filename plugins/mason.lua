@@ -1,5 +1,6 @@
 -- customize mason plugins
 return {
+  "jose-elias-alvarez/typescript.nvim",
   -- use mason-lspconfig to configure LSP installations
   {
     "williamboman/mason-lspconfig.nvim",
