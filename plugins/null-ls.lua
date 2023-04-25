@@ -7,11 +7,14 @@ return {
     -- Check supported formatters and linters
     -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting
     -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
-    config.sources = {
-      -- Set a formatter
-      -- null_ls.builtins.formatting.stylua,
-      -- null_ls.builtins.formatting.prettier,
-    }
-    return config -- return final config table
+    if not config.sources then
+      config.sources = {
+        -- Set a formatter
+        -- null_ls.builtins.formatting.stylua,
+        -- null_ls.builtins.formatting.prettier,
+      }
+    end
+    table.insert(config.sources, require "typescript.extensions.null-ls.code-actions")
+    -- return config -- return final config table
   end,
 }
