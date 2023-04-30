@@ -10,4 +10,5 @@ return {
   --   end,
   -- },
   { "akinsho/toggleterm.nvim", enabled = false },
+  { "goolord/alpha-nvim", enabled = false },
 }
