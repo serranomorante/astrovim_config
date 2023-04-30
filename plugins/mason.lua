@@ -1,6 +1,7 @@
 -- customize mason plugins
 return {
   "jose-elias-alvarez/typescript.nvim",
+  -- "simrat39/rust-tools.nvim",
   -- use mason-lspconfig to configure LSP installations
   {
     "williamboman/mason-lspconfig.nvim",
@@ -18,6 +19,8 @@ return {
         "gopls",
         -- toml
         "taplo",
+        -- rust
+        "rust_analyzer",
       },
     },
   },
@@ -42,9 +45,12 @@ return {
         "iferr",
         "impl",
         "goimports",
+        -- rust
+        "rustfmt",
       },
       handlers = {
-        taplo = function() end, -- disable taplo in null-ls, it's taken care of by lspconfig
+        taplo = function()
+        end,                    -- disable taplo in null-ls, it's taken care of by lspconfig
       },
     },
   },
@@ -52,7 +58,7 @@ return {
     "jay-babu/mason-nvim-dap.nvim",
     -- overrides `require("mason-nvim-dap").setup(...)`
     opts = {
-      ensure_installed = { "python" },
+      ensure_installed = { "python", "codelldb" },
     },
   },
   {

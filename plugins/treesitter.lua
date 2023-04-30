@@ -16,6 +16,8 @@ return {
       "go",
       -- toml
       "toml",
+      -- rust
+      "rust",
     },
   },
 }
