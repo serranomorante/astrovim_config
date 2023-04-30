@@ -14,6 +14,8 @@ return {
       "toml",
       -- golang
       "go",
+      -- toml
+      "toml",
     },
   },
 }

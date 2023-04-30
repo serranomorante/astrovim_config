@@ -16,6 +16,8 @@ return {
         "ruff_lsp",
         -- golang
         "gopls",
+        -- toml
+        "taplo",
       },
     },
   },
@@ -40,6 +42,9 @@ return {
         "iferr",
         "impl",
         "goimports",
+      },
+      handlers = {
+        taplo = function() end, -- disable taplo in null-ls, it's taken care of by lspconfig
       },
     },
   },
