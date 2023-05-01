@@ -49,8 +49,7 @@ return {
         "rustfmt",
       },
       handlers = {
-        taplo = function()
-        end,                    -- disable taplo in null-ls, it's taken care of by lspconfig
+        taplo = function() end, -- disable taplo in null-ls, it's taken care of by lspconfig
       },
     },
   },
