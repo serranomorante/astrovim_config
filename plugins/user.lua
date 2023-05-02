@@ -9,6 +9,6 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
-  { "akinsho/toggleterm.nvim", enabled = false },
+  -- { "akinsho/toggleterm.nvim", enabled = false },
   { "goolord/alpha-nvim", enabled = false },
 }
